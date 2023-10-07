@@ -13,6 +13,8 @@
 	<!-- <h1 id={id}>Heading</h1> -->
 	<!-- or better way -->
 	<h1 {id}>Heading</h1>
+
+	<!-- <button disabled={disabled}>Click</button> -->
 	<button {disabled}>Click</button>
 </main>
 
