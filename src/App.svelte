@@ -5,6 +5,7 @@
 	const id = "heading"
 	const disabled = true
 	const status = 'success'
+	const isSuccess = false
 </script>
 
 <main>
@@ -16,6 +17,12 @@
 	<h1 {id}>Heading</h1>
 	<h3 class="underline">Underlined text</h3>
 	<h3 class={status}>Status</h3>
+	
+	<!-- Ternary Operator -->
+	<h3 class={isSuccess? "success":"danger"}>Status</h3>
+	<!-- Class directive -->
+	<h3 class:success={isSuccess}>Status</h3>
+	
 	<!-- <button disabled={disabled}>Click</button> -->
 	<button {disabled}>Click</button>
 </main>
