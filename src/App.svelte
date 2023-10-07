@@ -6,6 +6,7 @@
 	const disabled = true
 	const status = 'success'
 	const isSuccess = false
+	const num = 1
 </script>
 
 <main>
@@ -22,6 +23,13 @@
 	<h3 class={isSuccess? "success":"danger"}>Status</h3>
 	<!-- Class directive -->
 	<h3 class:success={isSuccess}>Status</h3>
+
+	<!-- If else condition -->
+	{#if num === 0}
+		<h2>Num is 0</h2>
+	{:else}
+		<h2>Num is not 0</h2>
+	{/if}
 	
 	<!-- <button disabled={disabled}>Click</button> -->
 	<button {disabled}>Click</button>
