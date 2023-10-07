@@ -13,12 +13,17 @@
 	<!-- <h1 id={id}>Heading</h1> -->
 	<!-- or better way -->
 	<h1 {id}>Heading</h1>
+	<h3 class="underline">Underlined text</h3>
 
 	<!-- <button disabled={disabled}>Click</button> -->
 	<button {disabled}>Click</button>
 </main>
 
 <style>
+	.underline{
+		text-decoration: underline;
+	}
+
 	main {
 		text-align: center;
 		padding: 1em;
