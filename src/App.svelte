@@ -40,7 +40,8 @@
 		<h2>{index + 1} {num}</h2>
 	{/each} -->
 
-	{#each fullList as name,index}
+	<!-- The value in bracket is used for key -->
+	{#each fullList as name,index (name.first)}
 		<h2>{index + 1} {name.first} {name.last}</h2>
 	{/each}
 	
