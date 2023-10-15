@@ -7,6 +7,12 @@
 	const status = 'success'
 	const isSuccess = false
 	const num = 1
+	const list = ['1','2','3']
+	const fullList = [
+		{first: "hell", last: 'wold'},
+		{first: "hello", last: 'world'},
+		{first: "hel", last: 'wol'},
+	]
 </script>
 
 <main>
@@ -30,6 +36,9 @@
 	{:else}
 		<h2>Num is not 0</h2>
 	{/if}
+	{#each list as num, index}
+		<h2>{index + 1} {num}</h2>
+	{/each}
 	
 	<!-- <button disabled={disabled}>Click</button> -->
 	<button {disabled}>Click</button>
