@@ -36,8 +36,12 @@
 	{:else}
 		<h2>Num is not 0</h2>
 	{/if}
-	{#each list as num, index}
+	<!-- {#each list as num, index}
 		<h2>{index + 1} {num}</h2>
+	{/each} -->
+
+	{#each fullList as name,index}
+		<h2>{index + 1} {name.first} {name.last}</h2>
 	{/each}
 	
 	<!-- <button disabled={disabled}>Click</button> -->
